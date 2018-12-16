@@ -1,0 +1,78 @@
+.splash {
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom right, var(--five),var(--six));
+  top: 0;
+  transform: translateY(0);
+  filter: blur(0) opacity(1);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  transform: translateY(-120vh);
+  filter: blur(1px) opacity(0);
+  transition: all .7s ease-in;
+}
+
+.greeting {
+  color: var(--fourteen);
+  font-family: 'Lato', sans-serif;
+  font-size: 4vmax;
+  font-weight: 100;
+}
+
+.name{
+  color: var(--fourteen);
+  font-family: 'Lato', sans-serif;
+  font-size: 4vmax;
+  font-weight: 400;
+}
+
+.welcome{
+  color: var(--twenty-four);
+  font-family: 'Lato', sans-serif;
+  font-size: 4vmax;
+  font-weight: 100;
+}
+
+.typeWrapper{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.close{
+  position: absolute;
+  bottom: 0;
+}
+
+.down{
+  animation: bounce .7s ease alternate infinite both;
+}
+@media screen and (orientation: portrait) {
+  .down{
+    width: 17.5vmin;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .down{
+    width: 10vmin;
+  }
+  }
+
+@keyframes bounce {
+  from {
+    transform: translateY(-20%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+

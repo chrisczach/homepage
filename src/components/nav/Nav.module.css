@@ -1,0 +1,150 @@
+.dropDown{
+position: fixed;
+top: 0;
+height: 100vh;
+width: 100vw;
+transform: translateY(0);
+transition: all 2s ease;
+}
+
+.hide{
+  transform: translateY(-100%);
+  transition: all .5s ease;
+}
+
+
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nameSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: flex;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: var(--twenty-four);
+}
+
+@media screen and (orientation: portrait) {
+  .title{
+    font-size: 3vmax;
+    padding: 2vmax;
+    
+  }
+  .navButton{
+    top:  2vmax;
+    right: 2vmax;
+  }
+
+}
+
+@media screen and (orientation: landscape) {
+  .title{
+    font-size: 4vmin;
+    padding: 2vmin;
+  }
+
+  .navButton{
+    top:  0;
+    right: 1vmin;
+    transform: scale(.65);
+  }
+}
+.navButton{
+  content:"";
+  width: 4.5vmax;
+  height: 4.5vmax;
+  position: fixed;
+  z-index: 10000;
+}
+
+.openMenu{
+  position: absolute;
+  top: 50%;
+}
+
+.openMenu,
+.openMenu::before,
+.openMenu::after {
+  width: 4.5vmax;
+  height: .25vmax;
+  background-image: linear-gradient(to bottom, 
+    var(--twenty-four) 0%, 
+    var(--twenty-four) 50%, 
+    var(--twenty-four) 100% );
+  border-radius: 200px;
+  z-index: 10000;
+  content: "";
+  transition: top .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.openMenu::before,
+.openMenu::after {
+  display: inline-block;
+  position: absolute;
+}
+
+.openMenu::before{
+  top: -1.25vmax;
+}
+
+.openMenu::after{
+  top: 1.25vmax;
+}
+
+
+
+.closeMenu {
+  position: absolute;
+  top: 50%;
+  width: 4.5vmax;
+  height: .25vmax;
+  border-radius: 200px;
+  z-index: 10000;
+  content: "";
+}
+
+
+.closeMenu::before,
+.closeMenu::after {
+  width: 4.5vmax;
+  height: .25vmax;
+  background-image: linear-gradient(to bottom, 
+    var(--twenty-four) 0%, 
+    var(--twenty-four) 50%, 
+    var(--twenty-four) 100% );
+  border-radius: 200px;
+  z-index: 10000;
+  content: "";
+  transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.closeMenu::before,
+.closeMenu::after {
+  top: 0;
+  display: inline-block;
+  position: absolute;
+  transform-origin: center;
+}
+
+.closeMenu::before{
+  transform: rotate(45deg);
+}
+
+.closeMenu::after{
+  transform: rotate(-45deg);
+}
+
+
+
+
+
