@@ -7,6 +7,7 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400')
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 a {
   color: inherit;
@@ -44,5 +45,6 @@ a {
   --twenty-eight: #E27E8D;
   --twenty-nine: #ee3a43;
   --thirty: #fb94ff;
+  --thirty-one: #8a8a8a;
   }
 
