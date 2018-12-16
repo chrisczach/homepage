@@ -1,4 +1,5 @@
 body {
+  width: 100vw;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,400')
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 a {
@@ -15,11 +16,6 @@ a {
 }
 
 :root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   --one: rgb(0, 139, 148);
   --two: #027dff;
   --three: #15232d;
