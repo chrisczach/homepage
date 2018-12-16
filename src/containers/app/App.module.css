@@ -1,4 +1,6 @@
 .main {
 min-height: 300vh;
 background-image: radial-gradient(var(--twelve),var(--six));
+margin: 0;
+padding: 0;
 }

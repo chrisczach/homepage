@@ -1,4 +1,6 @@
 .splash {
+  padding: 0;
+  margin: 0;
   position: fixed;
   display: flex;
   height: 120vh;
