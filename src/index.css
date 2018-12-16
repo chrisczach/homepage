@@ -15,7 +15,7 @@ a {
 }
 
 :root {
-  --one: #008b94;
+  --one: rgb(0, 139, 148);
   --two: #027dff;
   --three: #15232d;
   --four: #171d23;
@@ -32,7 +32,7 @@ a {
   --fifteen: #3d454d;
   --sixteen: #41505E;
   --seventeen: #4e6e99;
-  --eighteen: #539afc;
+  --eighteen: rgb(83, 154, 252);
   --nineteen: #5ec4ff;
   --twenty: #68A1F0;
   --twenty-one: #70e1e8;

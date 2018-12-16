@@ -1,10 +1,10 @@
 .splash {
   position: fixed;
   display: flex;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   background-image: linear-gradient(to bottom right, var(--five),var(--six));
-  top: 0;
+  top: -20vh;
   transform: translateY(0);
   filter: blur(0) opacity(1);
   z-index: 1;
@@ -14,9 +14,9 @@
 }
 
 .hide{
-  transform: translateY(-120vh);
+  transform: translateY(-100vh);
   filter: blur(1px) opacity(0);
-  transition: all .7s ease-in;
+  transition: all .7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .greeting {
@@ -52,7 +52,7 @@
 }
 
 .down{
-  animation: bounce .7s ease alternate infinite both;
+  animation: bounce .7s ease-in-out alternate infinite both;
 }
 @media screen and (orientation: portrait) {
   .down{
