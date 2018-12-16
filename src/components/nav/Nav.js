@@ -13,10 +13,10 @@ const Nav = props => {
       </div>
       <nav className={props.navOpen ? classes.dropDown : classes.dropDown + ' ' + classes.hide}>
         <div className={classes.navWrapper}>
-          <div className={classes.navLink}>home</div>
-          <div className={classes.navLink}>about</div>
-          <div className={classes.navLink}>projects</div>
-          <div className={classes.navLink}>contact</div>
+          <div onClick={props.navClick} className={classes.navLink}><h1 className={classes.heading}>home</h1></div>
+          <div onClick={props.navClick} className={classes.navLink}><h1 className={classes.heading}>about</h1></div>
+          <div onClick={props.navClick} className={classes.navLink}><h1 className={classes.heading}>projects</h1></div>
+          <div onClick={props.navClick} className={classes.navLink}><h1 className={classes.heading}>contact</h1></div>
       </div>
       </nav>
       </>

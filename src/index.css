@@ -2,7 +2,6 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,9 +15,10 @@ a {
 }
 
 :root {
+  box-sizing: border-box;
   --one: rgb(0, 139, 148);
   --two: #027dff;
-  --three: #15232d;
+  --three: rgb(21, 35, 45);
   --four: #171d23;
   --five: #181e24;
   --six: #1D252C;
@@ -29,8 +29,8 @@ a {
   --eleven: #28323a;
   --twelve: #333F4A;
   --thirteen: #33CED8;
-  --fourteen: #3ad900;
-  --fifteen: #3d454d;
+  --fourteen: rgb(58, 217, 0);
+  --fifteen: hsl(210, 12%, 27%);
   --sixteen: #41505E;
   --seventeen: #4e6e99;
   --eighteen: rgb(83, 154, 252);
@@ -41,11 +41,12 @@ a {
   --twenty-three: #8bd49c;
   --twenty-four: #9effff;
   --twenty-five:#b62d65;
-  --twenty-size: #B7C5D3;
+  --twenty-six: #B7C5D3;
   --twenty-seven: #D95468;
   --twenty-eight: #E27E8D;
   --twenty-nine: #ee3a43;
   --thirty: #fb94ff;
   --thirty-one: #8a8a8a;
+  --thirty-two: rgb(30,30,30);
   }
 

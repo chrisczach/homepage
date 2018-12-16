@@ -1,0 +1,51 @@
+.wrap{
+position: fixed;
+top: 0;
+left: 0;
+width: calc(100vw - 2vmax);
+height: calc(100vh - 2vmax);
+margin: 1vmax;
+background-image: linear-gradient(to bottom right, var(--two),var(--eleven)) ;
+z-index: 20000;
+border-radius: 3px;
+border: 1px solid #555;
+overflow: hidden;
+transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+transform: scale(1) rotate(0);
+filter: opacity(1) blur(0);
+}
+
+.hide{
+  transform: scale(0) rotate(180deg);
+  filter: opacity(0) blur(2px);
+  transition: all .4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.frame{
+  position: absolute;
+  bottom: 0;
+  width: 101%;
+  height: calc(100% - 5vmax);
+  border: none;
+  border-top: 1px solid #555;
+}
+
+.title{
+  position: absolute;
+  top: 2.5vmax;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vmax;
+  color: white;
+}
+.close{
+  position: absolute;
+  top: 2.5vmax;
+  right: 1.25vmax;
+  transform: translateY(-50%);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 3vmax;
+  font-weight: 300;
+}
