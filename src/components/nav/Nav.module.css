@@ -1,6 +1,5 @@
 
 
-
 .dropDown{
   margin: 0;
   padding: 0;
@@ -15,13 +14,13 @@ top: -20vh;
 height: 120vh;
 width: 100vw;
 transform: translateY(0);
-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .hide{
   transform: translateY(-100vh);
   filter: blur(2px) opacity(0);
-  transition: all .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all .4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 
@@ -41,9 +40,9 @@ transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  color: var(--one);
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: var(--fifteen);
 }
 
 
@@ -182,8 +181,7 @@ transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .navLink:active .heading {
-  background-position-x: left;
-  transition: all 0s;
+  animation: click 2s both;
 }
 
 
@@ -194,6 +192,20 @@ transition: all .2s ease;
 box-sizing: border-box;
 }
 
+
+@keyframes click {
+  0% {
+    background-position-x: right;
+  }
+  2% {
+    background-position-x: left;
+  }
+
+  100% {
+    background-position-x: left;
+  }
+
+}
 
 .heading {
   font-weight: 100;
@@ -233,12 +245,6 @@ transform: translateY(-2px);
 transition: all .2s ease;
 }
 
-.link{
-position: absolute;
-top: 0; left: 0;
-height: 100%; width: 100%;
-text-decoration: none;
-}
 
 
 
