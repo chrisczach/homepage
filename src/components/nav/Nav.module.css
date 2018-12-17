@@ -195,10 +195,14 @@ box-sizing: border-box;
 
 
 @keyframes click {
-  from {
+  0% {
+    background-position-x: right;
+  }
+  2% {
     background-position-x: left;
   }
-  to {
+
+  100% {
     background-position-x: left;
   }
 

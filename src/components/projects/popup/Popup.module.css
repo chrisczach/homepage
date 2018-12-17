@@ -12,13 +12,14 @@ border: 1px solid #555;
 overflow: hidden;
 transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 transform: scale(1) rotate(0);
-filter: opacity(1) blur(0);
+filter: opacity(1) blur(0) saturate(100%);
+transform-origin: 25% 75%;
 }
 
 .hide{
   transform: scale(0) rotate(180deg);
-  filter: opacity(0) blur(2px);
-  transition: all .4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  filter: opacity(0) blur(4px) saturate(0%);
+  transition: all .6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .frame{

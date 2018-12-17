@@ -15,12 +15,13 @@ class Splash extends Component {
     	strings: strings,
       typeSpeed: 25,
       backSpeed: 10,
-      contentType: 'html'
+      contentType: 'html',
+      onComplete: this.props.hideSplash
 
     };
     // this.el refers to the <div> in the render() method
     this.typed = new Typed(this.el, options);
-    setTimeout(this.props.hideSplash, 6000);
+    //setTimeout(this.props.hideSplash, 6000);
   }
 
   componentWillUnmount() {
