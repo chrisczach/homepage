@@ -17,9 +17,10 @@
 }
 
 .hide{
+  backface-visibility: hidden;
   transform: translateY(-100vh);
-  filter: blur(1px) opacity(0);
-  transition: all .7s cubic-bezier(0.6, -0.28, 0.735, 0.045) .2s;
+  filter: blur(1px);
+  transition: all .7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .greeting {
