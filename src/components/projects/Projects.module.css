@@ -1,0 +1,34 @@
+.projects{
+  display: grid;
+  width: 98vw;
+  margin: auto;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom right, rgb(60,60,60),rgb(40,40,40));
+}
+
+.heading{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 5vmax;
+  color: white;
+}
+
+@media screen and (orientation: portrait) {
+.projects{
+grid-template-columns: repeat(2, 1fr);
+}
+.heading{
+  grid-column: 1 / span 2;
+}
+}
+
+@media screen and (orientation: landscape) {
+.projects{
+  grid-template-columns: repeat(3, 1fr);
+}
+.heading{
+  grid-column: 1 / span 3;
+  padding: 1vw;
+  
+}
+}

@@ -13,8 +13,8 @@ class App extends Component {
     showPopup: false,
     popupObject: {url: null},
     projects: [
-      { url: 'https://winniematch.chrisczach.com', title: 'Winnie Match', description: 'A card matching game using ReactJS.' },
-      { url: 'https://winniepuzzle.chrisczach.com', title: 'Winnie Puzzle',description: 'A puzzle game using ReactJS.'  }
+      { url: 'https://winniematch.chrisczach.com', title: 'Winnie Match', description: 'A card matching game built using ReactJS.' },
+      { url: 'https://winniepuzzle.chrisczach.com', title: 'Winnie Puzzle',description: 'A puzzle game built using ReactJS.'  }
     ]
   }
   

@@ -4,10 +4,14 @@ import Card from './card/Card';
 import Popup from './popup/Popup';
 
 const Projects = props => {
-  const projects = props.projects.map(e => <Card clickHandler={()=> props.togglePopupHandler(e)} >{e.url} {e.title} {e.description}</Card>);
+  const projects = props.projects.map(e => <Card project={e} clickHandler={() => props.togglePopupHandler(e)} >test</Card>);
 
   return (
-    <section>{projects}<Popup popupObject={props.popupObject} shown={props.showPopup} closeHandler={props.togglePopupHandler} /></section>
+    <section className={classes.projects}>
+      <header className={classes.heading}>Projects</header>
+      {projects}
+      <Popup popupObject={props.popupObject} shown={props.showPopup} closeHandler={props.togglePopupHandler} />
+    </section>
   )
 }
 

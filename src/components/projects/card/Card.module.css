@@ -1,0 +1,49 @@
+.card{
+  background-color: var(--three);
+border: 1px solid black;
+margin: 1vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 1vw;
+border-radius: 3px;
+box-shadow: 0 0 40px var(--five);
+transition: all .3s;
+}
+
+.card:hover{
+  box-shadow: 0 0 40px var(--twenty-seven);
+  transform: scale(1.02);
+  transition: all .3s;
+}
+
+.card:active{
+  box-shadow: 0 0 40px var(--fourteen);
+  transform: scale(1.00);
+  transition: all .1s;
+}
+
+.title{
+  font-family: 'Lato', sans-serif;
+  color: var(--fourteen);
+}
+
+.descripton{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--twenty-four);
+  font-weight: 300;
+  font-size: 1.5vmax;
+}
+
+@media screen and (orientation: portrait) {
+  .card{
+    height: calc(94vw / 2);
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .card{
+    height: calc(92vw / 3);
+  }
+}
