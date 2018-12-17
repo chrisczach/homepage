@@ -1,0 +1,15 @@
+.about{
+  margin: 1vw;
+  display: grid;
+  width: 98vw;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom right, var(--fifteen),var(--three));
+}
+
+.heading{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 5vmax;
+  color: white;
+  padding: 1vw;
+}

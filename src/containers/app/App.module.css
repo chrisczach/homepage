@@ -1,6 +1,13 @@
 .main {
+position: relative;
 min-height: 300vh;
 background-image: radial-gradient(var(--twelve),var(--six));
 margin: 0;
 padding: 0;
+}
+
+.backToTop{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

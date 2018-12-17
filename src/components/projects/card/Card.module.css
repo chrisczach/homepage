@@ -10,6 +10,7 @@ padding: 1vw;
 border-radius: 3px;
 box-shadow: 0 0 40px var(--five);
 transition: all .3s;
+backface-visibility: hidden;
 }
 
 .card:hover{

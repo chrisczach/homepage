@@ -11,6 +11,7 @@
   font-weight: 100;
   font-size: 5vmax;
   color: white;
+  padding: 1vw;
 }
 
 @media screen and (orientation: portrait) {
@@ -28,7 +29,6 @@ grid-template-columns: repeat(2, 1fr);
 }
 .heading{
   grid-column: 1 / span 3;
-  padding: 1vw;
   
 }
 }
