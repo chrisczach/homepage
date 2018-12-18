@@ -1,5 +1,5 @@
 .card{
-  background-color: var(--three);
+  background-color: var(--nine);
 border: 1px solid black;
 margin: 1vw;
 display: flex;
@@ -16,6 +16,7 @@ backface-visibility: hidden;
 .card:hover{
   box-shadow: 0 0 40px var(--twenty-seven);
   transform: scale(1.02);
+  filter: brightness(1.1);
   transition: all .3s;
 }
 

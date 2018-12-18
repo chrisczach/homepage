@@ -40,9 +40,10 @@ transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .title {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  color: var(--fifteen);
+  opacity: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: var(--eleven);
 }
 
 
@@ -54,8 +55,8 @@ transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     
   }
   .navButton{
-    top:  2vmax;
-    right: 2vmax;
+    top:  2vw;
+    right: 3vw;
   }
 
   .navWrapper{
@@ -85,8 +86,8 @@ transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .navButton{
-    top:  0;
-    right: 1vmin;
+    top:  1vw;
+    right: 2vw;
     transform: scale(.65);
   }
 }
@@ -180,10 +181,6 @@ transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all .75s ease-out;
 }
 
-.navLink:active .heading {
-  animation: click 2s both;
-}
-
 
 .navLink:active{
   box-shadow: 0 0 45px #333;
@@ -193,19 +190,6 @@ box-sizing: border-box;
 }
 
 
-@keyframes click {
-  0% {
-    background-position-x: right;
-  }
-  2% {
-    background-position-x: left;
-  }
-
-  100% {
-    background-position-x: left;
-  }
-
-}
 
 .heading {
   font-weight: 100;
@@ -217,7 +201,7 @@ box-sizing: border-box;
   -webkit-text-fill-color: transparent;
   transform-origin: center center;
   background-position-x: right;
-  transition: all .5s ease-in;
+  transition: all .7s ease-in;
 }
 
 
@@ -245,6 +229,11 @@ transform: translateY(-2px);
 transition: all .2s ease;
 }
 
+.link{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
 
 

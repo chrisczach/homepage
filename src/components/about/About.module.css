@@ -1,9 +1,34 @@
 .about{
-  margin: 1vw;
   display: grid;
   width: 98vw;
+  margin: auto;
   border-radius: 3px;
-  background-image: linear-gradient(to bottom right, var(--fifteen),var(--three));
+  background-image: linear-gradient(to bottom right, var(--seven) 0%,var(--five) 50%);
+  background-size: 300% 300%;
+  background-position: bottom right;
+  margin-bottom: 1vw;
+  transition: all .8s ease-out;
+}
+
+.about:hover{
+  background-position: top left;
+  transition: all .8s;
+}
+
+.title{
+  margin-top: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 8vw;
+}
+
+.subTitle{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: var(--twenty-three);
+  font-size: 4vw;
+
 }
 
 .heading{
@@ -13,3 +38,58 @@
   color: white;
   padding: 1vw;
 }
+
+.details{
+  grid-column: span 2;
+  align-self: center;
+}
+
+.profileImage{
+  border-radius: 1000px;
+  align-self: center;
+  justify-self: center;
+}
+
+.profileCaption{
+  grid-column: 2 / span 1;
+  align-self: center;
+  margin: auto;
+}
+
+@media screen and (orientation: portrait) {
+  .profileImage{
+    width: 70%;
+    margin: 15%;
+  }
+
+  .about{
+  grid-template-columns: repeat(2, 1fr);
+  background-position: top left;
+  }
+  .heading{
+    grid-column: 1 / span 2;
+  }
+
+  .profile{
+    grid-column: 1 / span 2;
+  }
+  }
+  
+  @media screen and (orientation: landscape) {
+    .profileImage{
+      width: 70%;
+      margin: 15%;
+    }
+    .profileCaption{
+      display: none;
+    }
+  .about{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .heading{
+    grid-column: 1 / span 3;
+    
+  }
+
+
+  }

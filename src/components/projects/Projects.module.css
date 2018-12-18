@@ -3,7 +3,15 @@
   width: 98vw;
   margin: auto;
   border-radius: 3px;
-  background-image: linear-gradient(to bottom right, rgb(60,60,60),rgb(40,40,40));
+  background-image: linear-gradient(to bottom right, var(--eighteen) 0%,var(--five) 50%);
+  background-size: 300% 300%;
+  background-position: bottom right;
+  transition: all .8s ease-out;
+}
+
+.projects:hover{
+  background-position: top left;
+  transition: all .8s;
 }
 
 .heading{
@@ -16,6 +24,7 @@
 
 @media screen and (orientation: portrait) {
 .projects{
+  background-position: 25% 25%;
 grid-template-columns: repeat(2, 1fr);
 }
 .heading{

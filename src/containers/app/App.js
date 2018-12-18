@@ -11,6 +11,7 @@ class App extends Component {
   state = {
     orientation:
       window.innerHeight > window.innerWidth ? 'portrait' : 'landscape',
+    width: 0,
     navOpen: false,
     showSplash: true,
     showPopup: false,
@@ -32,7 +33,8 @@ class App extends Component {
   setOrientation = () =>
     this.setState({
       orientation:
-        window.innerHeight > window.innerWidth ? 'portrait' : 'landscape'
+        window.innerHeight > window.innerWidth ? 'portrait' : 'landscape',
+      width: window.innerWidth
     });
   navClickHandler = () => this.setState(state => ({ navOpen: !state.navOpen }));
   hideSplashHandler = () => this.setState({ showSplash: false });
@@ -40,6 +42,7 @@ class App extends Component {
     this.setState(state => ({ showPopup: !state.showPopup, popupObject }));
 
   componentDidMount() {
+    this.setOrientation();
     window.addEventListener('resize', this.setOrientation);
     window.addEventListener('deviceorientation', this.setOrientation);
   }
@@ -52,6 +55,7 @@ class App extends Component {
     return (
       <main className={classes.main}>
         <Nav
+          width={this.state.width}
           navClick={this.navClickHandler}
           navOpen={this.state.navOpen}
           orientation={this.state.orientation}
