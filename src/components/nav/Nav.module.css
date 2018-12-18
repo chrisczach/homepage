@@ -56,6 +56,7 @@ backface-visibility: hidden;
 
 
 @media screen and (orientation: portrait) {
+
   .title{
     font-size: 3vmax;
     padding: 2vmax;
@@ -213,6 +214,8 @@ box-sizing: border-box;
 
 
 .navLink{
+  position: relative;
+  overflow: hidden;
   margin: 3vmin;
   background-color: var(--five);
   color: var(--one);

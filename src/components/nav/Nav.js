@@ -22,22 +22,22 @@ const Nav = props => {
       >
         <div className={classes.navWrapper}>
           <div onClick={props.navClick} className={classes.navLink}>
-            <a className={classes.link} href="#home" />
+            <a className={classes.link} href="#home"></a>
             <h1 className={classes.heading}>home</h1>
           </div>
 
           <div onClick={props.navClick} className={classes.navLink}>
-            <a className={classes.link} href="#about" />
+            <a className={classes.link} href="#about"></a>
             <h1 className={classes.heading}>about</h1>
           </div>
 
           <div onClick={props.navClick} className={classes.navLink}>
-            <a className={classes.link} href="#projects" />
+            <a className={classes.link} href="#projects"></a>
             <h1 className={classes.heading}>projects</h1>
           </div>
 
           <div onClick={props.navClick} className={classes.navLink}>
-            <a className={classes.link} href="#contact" />
+            <a className={classes.link} href="#contact"></a>
             <h1 className={classes.heading}>contact</h1>
           </div>
         </div>
