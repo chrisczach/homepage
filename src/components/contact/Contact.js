@@ -22,7 +22,6 @@ const Contact = props => {
       className={classes.contact}
       name="contact"
       method="POST"
-      data-netlify="true"
     >
       <ScrollableAnchor id={'contact'}>
         <header className={classes.heading}>contact</header>

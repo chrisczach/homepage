@@ -43,8 +43,8 @@ transform-origin: center center;
 @media screen and (orientation: portrait) {
   .wrap{
     width: calc(100vw - 2vmax);
-height: 85vh;
-margin: 15vh 1vmax;
+height: 80vh;
+margin: 10vh 1vmax;
   }
 }
 

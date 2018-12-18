@@ -1,8 +1,7 @@
 .projects{
   display: grid;
   width: 98vw;
-  margin: auto;
-  margin-bottom: 1.25vw;
+  margin: 1.25vw auto 1.25vw auto;
   border-radius: 3px;
   background-image: linear-gradient(to bottom right, var(--eighteen) 0%,var(--five) 50%);
   background-size: 200% 300%;
@@ -13,14 +12,20 @@
 .projects:hover{
   background-position: top left;
   transition: all .8s;
+  box-shadow: 0 0 20px var(--fourteen);
 }
+
+.projects:hover .heading{
+  color: var(--fourteen);
+  }
+
 
 .heading{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 5vmax;
   color: white;
-  padding: 1vw;
+  padding: 2vw;
 }
 
 @media screen and (orientation: portrait) {

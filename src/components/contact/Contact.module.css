@@ -15,13 +15,19 @@
 .contact:hover{
   background-position: top left;
   transition: all .8s;
+  box-shadow: 0 0 20px var(--fourteen);
 }
+
+.contact:hover .heading{
+color: var(--fourteen);
+}
+
 .heading{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 5vmax;
   color: white;
-  padding: 1vw;
+  padding: 2vw;
   margin-bottom: 8vw;
   grid-column: 1 / span 2;
 }
@@ -79,13 +85,19 @@
   background-color: white;
   border-radius: 3px;
   box-shadow: 0 0 10px var(--one);
+  transition: all .4s;
+}
+
+.inputs:focus{
+  box-shadow: 0 0 20px var(--fourteen);
+  transition: all .4s;
 }
 
 .inputsFilled,
 .inputs:focus ~ .placeholder{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: black;
+  color:  var(--three);
   transition: all .2s ease-out;
   top: 0;
   font-size: 1.5vmax;

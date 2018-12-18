@@ -13,13 +13,19 @@
 .about:hover{
   background-position: top left;
   transition: all .8s;
+  box-shadow: 0 0 20px var(--fourteen);
 }
+
+.about:hover .heading{
+  color: var(--fourteen);
+  }
+
 .heading{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 5vmax;
   color: white;
-  padding: 1vw;
+  padding: 2vw;
 }
 
 .title{
