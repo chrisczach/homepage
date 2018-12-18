@@ -9,15 +9,17 @@ const Contact = props => {
       <ScrollableAnchor id={'contact'}>
         <header className={classes.heading}>contact</header>
       </ScrollableAnchor>
-    <label className={classes.labels} for="name">Name </label>   <input className={classes.inputs} placeholder="Full Name" type="text" name="name" required/>
+      <label className={classes.labels} for="name">Name </label>   <div className={classes.inputWrap}><input  className={classes.inputs} type="text" name="name" required/><span className={classes.placeholder}>Full Name</span> </div>
 
-    <label className={classes.labels} for="email">Email </label><input className={classes.inputs} placeholder="Email Address" type="email" name="email" required/>
+    <label className={classes.labels} for="email">Email </label><div className={classes.inputWrap}><input className={classes.inputs} type="email" name="email" required/><span className={classes.placeholder}>Email Address</span></div>
 
-    <label className={classes.labels} for="subect">Subject </label><textarea  className={classes.inputs} placeholder="Subject" name="subject"></textarea>
+    <label className={classes.labels} for="email">Email </label><div className={classes.inputWrap}><input className={classes.inputs} type="tel" name="phone" /><span className={classes.placeholder}>Phone Number</span></div> 
+
+    <label className={classes.labels} for="subect">Subject </label><div className={classes.inputWrap}><div contentEditable="true"   className={classes.inputs} name="subject"></div><span className={classes.placeholder}>Subject</span></div>
  
-    <label className={classes.labels} for="message">Message </label><textarea  className={classes.inputs}  placeholder="Message"  name="message" required></textarea>
+    <label className={classes.labels} for="message">Message </label><div className={classes.inputWrap}><div contentEditable="true" className={classes.inputs}  name="message" required></div><span className={classes.placeholder}>Message</span></div>
  
-      <button className={classes.submit}type="submit">Send</button>
+      <button className={classes.submit}type="submit">Send &rarr;</button>
 
 </form>
  
