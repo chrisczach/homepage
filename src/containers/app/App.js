@@ -37,7 +37,7 @@ class App extends Component {
         window.innerHeight > window.innerWidth ? 'portrait' : 'landscape',
       width: window.innerWidth
     });
-  navClickHandler = () => this.setState(state => ({ navOpen: !state.navOpen }));
+  navClickHandler = () => this.setState(state => ({ navOpen: !state.navOpen,  showSplash: false,   showPopup: false,}));
   hideSplashHandler = () => this.setState({ showSplash: false });
   togglePopupHandler = (popupObject = { url: null }) =>
     this.setState(state => ({ showPopup: !state.showPopup, popupObject }));
