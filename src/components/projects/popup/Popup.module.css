@@ -1,3 +1,27 @@
+
+  .background{
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: 500vmax;
+    height: 500vmax;
+    border-radius: 500vmax;
+    background-image: radial-gradient(var(--four), black);
+    filter: opacity(.8);
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    transition: all .3s;
+  }
+
+  .hideBackground{
+    filter: opacity(1);
+height: 0;
+width: 0;
+transition: all .3s;
+  }
+
+
 .wrap{
 position: fixed;
 top: 0;
@@ -13,7 +37,15 @@ overflow: hidden;
 transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 transform: scale(1) rotate(0);
 filter: opacity(1) blur(0) saturate(100%);
-transform-origin: 25% 75%;
+transform-origin: center center;
+}
+
+@media screen and (orientation: portrait) {
+  .wrap{
+    width: calc(100vw - 2vmax);
+height: 70vh;
+margin: 15vh 1vmax;
+  }
 }
 
 .hide{
