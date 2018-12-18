@@ -81,7 +81,7 @@
   box-shadow: 0 0 10px var(--one);
 }
 
-
+.inputsFilled,
 .inputs:focus ~ .placeholder{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -91,6 +91,9 @@
   font-size: 1.5vmax;
   transform: translateY(-35%);
   transform-origin: left;
+  pointer-events: none;
+  position: absolute;
+  left: 3vw;
 
 }
  .placeholder{

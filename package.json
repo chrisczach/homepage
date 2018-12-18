@@ -4,8 +4,8 @@
   "homepage": "https://www.chrisczach.com/",
   "private": true,
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.7.0-alpha",
+    "react-dom": "^16.7.0-alpha",
     "react-scripts": "2.1.1",
     "react-scrollable-anchor": "^0.6.1",
     "typed.js": "^2.0.9"
