@@ -1,15 +1,23 @@
 .contact{
-
+  box-shadow: 0 0 20px var(--seven);
   display: grid;
   width: 98vw;
-  margin: auto;
+  margin: 2.5vw auto 2.5vw auto;
   border-radius: 3px;
-  background-image: linear-gradient(to bottom right, var(--one) 0%,var(--twenty-three) 50%);
+  
+  background-image: linear-gradient(to bottom right, var(--nine) 0%,var(--twenty-two) 50%);
   background-size: 300% 600%;
   background-position: bottom right;
   margin-bottom: 1.25vw;
   transition: all .8s ease-out;
   grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (orientation: landscape) {
+
+  .contact{
+    width: 75vw;
+  }
 }
 
 .contact:hover{
@@ -75,6 +83,7 @@ color: var(--fourteen);
   width: 100%;
 }
 .inputs{
+  border: 2px inset #ddd ;
   padding: 1vw;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -112,11 +121,11 @@ color: var(--fourteen);
   transition: all .2s ease-out;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 2.5vmax;
+  font-size: 2vmax;
   pointer-events: none;
   position: absolute;
   left: 3vw;
-  top: 1vw;
+  top: 1.25vw;
   transform: translateY(50% );
   color: var(--thirteen);
 }

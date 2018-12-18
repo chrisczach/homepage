@@ -1,10 +1,11 @@
 .projects{
+  box-shadow: 0 0 20px var(--seven);
   display: grid;
   width: 98vw;
-  margin: 1.25vw auto 1.25vw auto;
+  margin: 2.5vw auto 2.5vw auto;
   border-radius: 3px;
-  background-image: linear-gradient(to bottom right, var(--eighteen) 0%,var(--five) 50%);
-  background-size: 200% 300%;
+  background-image: linear-gradient(to bottom right, var(--one) 0%,var(--twenty-three) 50%);
+  background-size: 150% 300%;
   background-position: bottom right;
   transition: all .8s ease-out;
 }
@@ -41,6 +42,8 @@ grid-template-columns: repeat(2, 1fr);
 @media screen and (orientation: landscape) {
 .projects{
   grid-template-columns: repeat(3, 1fr);
+    width: 75vw;
+  
 }
 .heading{
   grid-column: 1 / span 3;

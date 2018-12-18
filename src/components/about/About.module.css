@@ -1,13 +1,14 @@
 .about{
   display: grid;
   width: 98vw;
-  margin: auto;
+  margin: 2.5vw auto 2.5vw auto;
   border-radius: 3px;
-  background-image: linear-gradient(to bottom right, var(--seven) 0%,var(--five) 50%);
+  background-image: linear-gradient(to bottom right, var(--eleven ) 0%,var(--seventeen) 50%);
   background-size: 300% 300%;
   background-position: bottom right;
   margin-bottom: 1.25vw;
   transition: all .8s ease-out;
+  box-shadow: 0 0 20px var(--seven);
 }
 
 .about:hover{
@@ -119,7 +120,28 @@
   }
   
   @media screen and (orientation: landscape) {
+    .title{
+      font-size: 6vw;
+    }
+
+    .title:hover{
+      text-shadow: 0 0 60px var(--fourteen);
+    }
+
+    .subTitle:hover{
+      text-shadow: 0 0 20px var(--fourteen);
+    }
+    
+    .subTitle{
+      font-size: 3vw;
+    
+    }
+
+    .about{
+      width: 75vw;
+    }
       .details{
+        font-size: 1.5vw;
         margin: 0 5% 5% 5%;
         grid-column: 1/ span 3;
         grid-row: 3;

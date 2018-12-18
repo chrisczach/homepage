@@ -14,6 +14,7 @@ body {
 body::-webkit-scrollbar {
   z-index: 1;
 width: 1vw;
+border-radius: 10000px;
 }
 
 body::-webkit-scrollbar:hover{
