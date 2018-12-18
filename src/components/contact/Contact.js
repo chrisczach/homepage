@@ -17,7 +17,7 @@ const Contact = props => {
 
     <label className={classes.labels} for="subect">Subject </label><div className={classes.inputWrap}><div contentEditable="true"   className={classes.inputs} name="subject"></div><span className={classes.placeholder}>Subject</span></div>
  
-    <label className={classes.labels} for="message">Message </label><div className={classes.inputWrap}><div contentEditable="true" className={classes.inputs}  name="message" required></div><span className={classes.placeholder}>Message</span></div>
+    <label className={classes.labels} for="message">Message </label><div className={classes.inputWrap}><div contentEditable="true"className={classes.inputs + '  '+ classes.message }  name="message" required></div><span className={classes.placeholder}>Message</span></div>
  
       <button className={classes.submit}type="submit">Send &rarr;</button>
 
