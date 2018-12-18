@@ -1,13 +1,51 @@
 body {
+  background: #aaa;
   width: 100vw;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body::-webkit-scrollbar {
+  z-index: 1;
+width: 1vw;
+}
+
+body::-webkit-scrollbar:hover{
+  border: 1px solid #444;
+  z-index: 1;
+  background: rgba(38, 80, 109,.4);
+width: 1vw;
+  }
+
+
+/* Track */
+body::-webkit-scrollbar-track {
+  z-index: 1;
+  background: transparent;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  border-radius: 1000px;
+  
+  z-index: 1;
+  background: var( --five); 
+}
+
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  border: 1px solid #444;
+  box-shadow: 0 0 5px var(--eleven);
+  z-index: 1;
+  background: var( --eight); 
+}
 
 a {
   color: inherit;
@@ -24,7 +62,7 @@ a {
   --six: #1D252C;
   --seven: #1F4662;
   --eight: #243E51;
-  --nine: #26506D;
+  --nine: rgb(38, 80, 109);
   --ten: #28313a;
   --eleven: rgb(40, 50, 58);
   --twelve: #333F4A;
