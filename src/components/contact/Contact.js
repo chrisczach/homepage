@@ -13,7 +13,7 @@ const Contact = props => {
 
     <label className={classes.labels} for="email">Email </label><div className={classes.inputWrap}><input className={classes.inputs} type="email" name="email" required/><span className={classes.placeholder}>Email Address</span></div>
 
-    <label className={classes.labels} for="email">Email </label><div className={classes.inputWrap}><input className={classes.inputs} type="tel" name="phone" /><span className={classes.placeholder}>Phone Number</span></div> 
+    <label className={classes.labels} for="email">Phone </label><div className={classes.inputWrap}><input className={classes.inputs} type="tel" name="phone" /><span className={classes.placeholder}>Phone Number</span></div> 
 
     <label className={classes.labels} for="subect">Subject </label><div className={classes.inputWrap}><div contentEditable="true"   className={classes.inputs} name="subject"></div><span className={classes.placeholder}>Subject</span></div>
  
