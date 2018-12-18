@@ -21,7 +21,7 @@
   transform: translateY(-100vh);
   filter: blur(1px);
   backface-visibility: hidden;
-  transition: all .7s cubic-bezier(0.6, -0.28, 0.735, 0.045) .7s;
+  transition: all .7s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.2s;
 }
 
 .greeting {
