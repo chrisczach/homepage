@@ -6,7 +6,7 @@
   background-image: linear-gradient(to bottom right, var(--seven) 0%,var(--five) 50%);
   background-size: 300% 300%;
   background-position: bottom right;
-  margin-bottom: 1vw;
+  margin-bottom: 1.25vw;
   transition: all .8s ease-out;
 }
 
