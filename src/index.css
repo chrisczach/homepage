@@ -33,9 +33,9 @@ body::-webkit-scrollbar-track {
 /* Handle */
 body::-webkit-scrollbar-thumb {
   border-radius: 1000px;
-  
   z-index: 1;
-  background: var( --five); 
+  border: 1px solid var( --five); 
+  background: rgba(24, 30, 36,.3);
 }
 
 
