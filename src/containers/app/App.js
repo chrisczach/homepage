@@ -6,6 +6,7 @@ import Popup from '../../components/projects/popup/Popup';
 import Projects from '../../components/projects/Projects';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import About from '../../components/about/About';
+import Contact from '../../components/contact/Contact';
 
 class App extends Component {
   state = {
@@ -70,8 +71,12 @@ class App extends Component {
             showPopup={this.state.showPopup}
             popupObject={this.state.popupObject}
             togglePopupHandler={this.togglePopupHandler}
-          />
-        <div className={classes.backToTop}><a href='#home'>back to top</a></div>
+        />
+        
+        <Contact />
+        <div className={classes.shadowWrap}>
+          <div className={classes.backToTop}><a className={classes.toTopLink} href='#home'>back to top</a></div>
+          </div>
       </main>
     );
   }

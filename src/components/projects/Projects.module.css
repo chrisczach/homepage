@@ -2,9 +2,10 @@
   display: grid;
   width: 98vw;
   margin: auto;
+  margin-bottom: 1.25vw;
   border-radius: 3px;
   background-image: linear-gradient(to bottom right, var(--eighteen) 0%,var(--five) 50%);
-  background-size: 300% 300%;
+  background-size: 200% 300%;
   background-position: bottom right;
   transition: all .8s ease-out;
 }

@@ -1,0 +1,54 @@
+.contact{
+  display: grid;
+  width: 98vw;
+  margin: auto;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom right, var(--one) 0%,var(--twenty-three) 50%);
+  background-size: 300% 600%;
+  background-position: bottom right;
+  margin-bottom: 1.25vw;
+  transition: all .8s ease-out;
+}
+
+.contact:hover{
+  background-position: top left;
+  transition: all .8s;
+}
+.heading{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 5vmax;
+  color: white;
+  padding: 1vw;
+}
+
+
+@media screen and (orientation: portrait) {
+
+  .contact{
+  grid-template-columns: repeat(2, 1fr);
+  background-position: top left;
+  }
+  .heading{
+    grid-column: 1 / span 2;
+  }
+
+  }
+  
+  @media screen and (orientation: landscape) {
+
+  .contact{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .heading{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    
+  }
+
+
+  }
+
+  .contactForm{
+    grid-column: 1 / span 3;
+  }

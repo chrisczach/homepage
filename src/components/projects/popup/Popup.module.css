@@ -11,14 +11,14 @@
     z-index: 10000;
     transform: translate(-50%, -50%);
     transform-origin: center center;
-    transition: all .3s;
+    transition: all .4s;
   }
 
   .hideBackground{
     filter: opacity(1);
 height: 0;
 width: 0;
-transition: all .3s;
+transition: all .6s;
   }
 
 

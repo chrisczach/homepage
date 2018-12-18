@@ -14,6 +14,13 @@
   background-position: top left;
   transition: all .8s;
 }
+.heading{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 5vmax;
+  color: white;
+  padding: 1vw;
+}
 
 .title{
   margin-top: 0;
@@ -31,27 +38,50 @@
 
 }
 
-.heading{
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: 5vmax;
-  color: white;
-  padding: 1vw;
-}
+
 
 .details{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
   grid-column: span 2;
   align-self: center;
+  color: #ccc;
 }
 
 .profileImage{
-  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 40px var(--two);
+  border-radius: 50%;
   align-self: center;
   justify-self: center;
+  transition: all .2s ease;
 }
 
+.image{
+  width: 100%;
+  transition: all .2s ease;
+}
+
+.profileImage:hover{
+  box-shadow: 0 0 40px var(--fourteen);
+  content: "";
+  border-radius: 25%;
+  transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(-45deg);
+}
+
+.profileImage:hover .image{
+  transform: scale(1.2) rotate(30deg);
+  transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 .profileCaption{
   grid-column: 2 / span 1;
+  grid-row: 2;
   align-self: center;
   margin: auto;
 }
@@ -73,21 +103,37 @@
   .profile{
     grid-column: 1 / span 2;
   }
+
+  .details{
+    margin: 0 5% 5% 5%;
+
+    font-size: 3vw;
+  }
   }
   
   @media screen and (orientation: landscape) {
+      .details{
+        margin: 0 5% 5% 5%;
+        grid-column: 1/ span 3;
+        grid-row: 3;
+      }
+
     .profileImage{
       width: 70%;
-      margin: 15%;
+      margin: 15% 0 15% 30%;
+      grid-column: 1;
+      grid-row: 2;
     }
     .profileCaption{
-      display: none;
+      margin-right: 25%;
+      grid-column: 2 / span 2;
     }
   .about{
     grid-template-columns: repeat(3, 1fr);
   }
   .heading{
     grid-column: 1 / span 3;
+    grid-row: 1;
     
   }
 
