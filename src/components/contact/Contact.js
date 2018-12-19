@@ -22,6 +22,7 @@ const Contact = props => {
       className={classes.contact}
       name="contact"
       method="POST"
+      action="https://formspree.io/contactform@chrisczach.com"
     >
       <ScrollableAnchor id={'contact'}>
         <header className={classes.heading}>contact</header>
