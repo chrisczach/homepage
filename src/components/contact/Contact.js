@@ -135,7 +135,7 @@ const Contact = props => {
       </button>
       <input type="hidden" name="_subject" value="Website contact" />
       <input type="hidden" name="_next" value="https://www.chrisczach.com" />
-      <input type="text" name="_gotcha" style="display:none" />
+      <input type="text" name="_gotcha" style={{display: 'none'}} />
     </form>
   );
 };
