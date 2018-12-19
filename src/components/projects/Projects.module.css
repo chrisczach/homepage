@@ -1,9 +1,6 @@
 .projects{
   box-shadow: 0 0 20px var(--seven);
   display: grid;
-  width: 98vw;
-  margin: 2.5vw auto 2.5vw auto;
-  border-radius: 3px;
   background-image: linear-gradient(to bottom right, var(--one) 0%,var(--twenty-three) 50%);
   background-size: 150% 300%;
   background-position: bottom right;
@@ -14,6 +11,7 @@
   background-position: top left;
   transition: all .8s;
   box-shadow: 0 0 20px var(--fourteen);
+  z-index: 5;
 }
 
 .projects:hover .heading{
@@ -42,7 +40,6 @@ grid-template-columns: repeat(2, 1fr);
 @media screen and (orientation: landscape) {
 .projects{
   grid-template-columns: repeat(3, 1fr);
-    width: 75vw;
   
 }
 .heading{

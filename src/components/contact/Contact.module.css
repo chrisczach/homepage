@@ -1,29 +1,36 @@
 .contact{
   box-shadow: 0 0 20px var(--seven);
   display: grid;
-  width: 98vw;
-  margin: 2.5vw auto 2.5vw auto;
-  border-radius: 3px;
-  
   background-image: linear-gradient(to bottom right, var(--nine) 0%,var(--twenty-two) 50%);
   background-size: 300% 600%;
   background-position: bottom right;
-  margin-bottom: 1.25vw;
   transition: all .8s ease-out;
   grid-template-columns: 1fr 2fr;
 }
 
-@media screen and (orientation: landscape) {
+.contactText{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 3vw;
+  margin: 0 10vw 5vw 10vw;
+  grid-row: 2;
+  grid-column: span 2;
+  align-self: center;
+  color: #ccc;
+}
 
-  .contact{
-    width: 75vw;
+@media screen and (orientation: landscape) {
+  .contactText{
+  font-size: 1.5vw;
   }
 }
+
 
 .contact:hover{
   background-position: top left;
   transition: all .8s;
   box-shadow: 0 0 20px var(--fourteen);
+  z-index: 5;
 }
 
 .contact:hover .heading{

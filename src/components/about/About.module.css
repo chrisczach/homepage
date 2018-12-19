@@ -1,12 +1,8 @@
 .about{
   display: grid;
-  width: 98vw;
-  margin: 2.5vw auto 2.5vw auto;
-  border-radius: 3px;
   background-image: linear-gradient(to bottom right, var(--eleven ) 0%,var(--seventeen) 50%);
   background-size: 300% 300%;
   background-position: bottom right;
-  margin-bottom: 1.25vw;
   transition: all .8s ease-out;
   box-shadow: 0 0 20px var(--seven);
 }
@@ -15,6 +11,7 @@
   background-position: top left;
   transition: all .8s;
   box-shadow: 0 0 20px var(--fourteen);
+  z-index: 5;
 }
 
 .about:hover .heading{
@@ -137,9 +134,7 @@
     
     }
 
-    .about{
-      width: 75vw;
-    }
+
       .details{
         font-size: 1.5vw;
         margin: 0 5% 5% 5%;

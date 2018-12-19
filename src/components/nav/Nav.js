@@ -3,7 +3,7 @@ import classes from './Nav.module.css';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 const Nav = props => {
-  configureAnchors({ offset: -props.width / 120, scrollDuration: 600 });
+  configureAnchors({ offset: 0, scrollDuration: 600 });
   return (
     <>
       <ScrollableAnchor id={'home'}>

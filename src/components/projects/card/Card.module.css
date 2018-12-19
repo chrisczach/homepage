@@ -1,7 +1,7 @@
 .card{
   background-color: var(--one);
 border: 1px solid black;
-margin: 1vw;
+margin: 3vw;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -28,7 +28,7 @@ backface-visibility: hidden;
 
 .title{
   font-family: 'Lato', sans-serif;
-  color: var(--fourteen);
+  color: #ccc;
 }
 
 .descripton{
@@ -40,12 +40,12 @@ backface-visibility: hidden;
 
 @media screen and (orientation: portrait) {
   .card{
-    height: calc(94vw / 2);
+    height: calc(83vw / 2);
   }
 }
 
 @media screen and (orientation: landscape) {
   .card{
-    height: calc(92vw / 3);
+    height: calc(75vw / 3);
   }
 }
