@@ -5,7 +5,7 @@ import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 const Contact = props => {
   const [form, setForm] = useState({
     name: '',
-    email: '',
+    _replyto: '',
     phone: '',
     subject: '',
     message: ''
@@ -53,7 +53,7 @@ const Contact = props => {
       </label>
       <div className={classes.inputWrap}>
         <input
-          value={form.email}
+          value={form._replyto}
           onChange={handleChange}
           className={classes.inputs}
           type="email"
@@ -62,7 +62,7 @@ const Contact = props => {
         />
         <span
           className={
-            form.email.length === 0 ? classes.placeholder : classes.inputsFilled
+            form._replyto.length === 0 ? classes.placeholder : classes.inputsFilled
           }
         >
           Email Address
