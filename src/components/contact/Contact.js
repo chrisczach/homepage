@@ -48,7 +48,7 @@ const Contact = props => {
           Full Name
         </span>{' '}
       </div>
-      <label className={classes.labels} for="email">
+      <label className={classes.labels} for="_replyto">
         Email{' '}
       </label>
       <div className={classes.inputWrap}>
@@ -57,7 +57,7 @@ const Contact = props => {
           onChange={handleChange}
           className={classes.inputs}
           type="email"
-          name="email"
+          name="_replyto"
           required
         />
         <span
@@ -68,7 +68,7 @@ const Contact = props => {
           Email Address
         </span>
       </div>
-      <label className={classes.labels} for="email">
+      <label className={classes.labels} for="phone">
         Phone{' '}
       </label>
       <div className={classes.inputWrap}>
@@ -87,7 +87,7 @@ const Contact = props => {
           Phone Number
         </span>
       </div>
-      <label className={classes.labels} for="subect">
+      <label className={classes.labels} for="subject">
         Subject{' '}
       </label>
       <div className={classes.inputWrap}>
@@ -133,6 +133,9 @@ const Contact = props => {
       <button className={classes.submit} type="submit">
         Send &rarr;
       </button>
+      <input type="hidden" name="_subject" value="Website contact" />
+      <input type="hidden" name="_next" value="https://www.chrisczach.com" />
+      <input type="text" name="_gotcha" style="display:none" />
     </form>
   );
 };
